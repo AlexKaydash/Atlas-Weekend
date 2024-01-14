@@ -1,0 +1,129 @@
+html,body {
+  height: 100%;
+  width: 100%;
+}
+body{
+background: url("123.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+} 
+.aw{
+  margin: 30px 170px;
+  font-size: 25pt;
+  color: #e3d9d9
+}
+p{
+  font-family: 'Roboto' , sans-serif;
+}
+h1{
+  font-family: 'Lobster', cursive;
+}
+.av{
+  margin: 35px 70px;
+  font-size: 40pt;
+  color: #e3d9d9
+}
+.pulse{
+  background-color: #e3d9d9;
+  border: none;
+  border-radius: 5px;
+  padding: 25px 30px;
+  margin: 10px 122px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 15pt;
+  color: #040734
+}
+.ww{
+  margin: 50px;
+}
+a{
+  text-decoration: none;
+}
+@keyframes pulse {
+  25% {
+    transform: scale(1.1);
+  }
+
+  75% {
+    transform: scale(.9);
+  }
+}
+
+.pulse {
+  display: inline-block;
+
+  @include hideTapHighlightColor();
+  @include hardwareAccel();
+  @include improveAntiAlias();
+
+  &:hover {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+}
+.block{
+  height: 500px;
+  width: 500px;
+  border: 3px solid #ff9500;
+  color: #ffffff;
+  margin: 170px 300px 100px 1150px;
+  font-family: 'Rubik Maps' , cursive;
+  padding: 80px 10px 20px 30px;
+  font-size: 20pt;
+  font-weight: bold;
+  background-color: #30522d;
+  border-radius: 25px;
+}  
+.aa{
+   font-family: 'Ubuntu', sans-serif;
+}
+.block1{
+  border-radius: 50%;
+  position: relative;
+  bottom: 800px; left: 50px;
+}
+.block2{
+  border-radius: 50%;
+  position: relative;
+  bottom: 800px; left: 200px;
+}
+.block3{
+  border-radius: 50%;
+  position: relative;
+  bottom: 400px; left: -360px;
+}
+.block4{
+  border-radius: 25px;
+  position: relative;
+  bottom: 780px; left: 175px;
+  color: white;
+  border: 2px solid #002aff;
+  background-color: #420505;
+  padding: 5px 10px 5px 40px;
+  width: 80px;
+  font-family: 'Roboto Mono', monospace;
+}
+.block5{
+  border-radius: 25px;
+  position: relative;
+  bottom: 820px; left: 690px;
+  color: white;
+  border: 2px solid #002aff;
+  background-color: #420505;
+  padding: 5px 10px 5px 40px;
+  width: 80px;
+  font-family: 'Roboto Mono', monospace;
+}
+.block6{
+  border-radius: 25px;
+  position: relative;
+  bottom: 450px; left: 450px;
+  color: white;
+  border: 2px solid #002aff;
+  background-color: #420505;
+  padding: 5px 10px 5px 5px;
+  width: 80px;
+  font-family: 'Roboto Mono', monospace;
+}
